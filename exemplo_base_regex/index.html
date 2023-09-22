@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index.js" defer></script>
+    <title>Formulário de Validação</title>
+</head>
+
+<body>
+    <h1>Formulário de Validação</h1>
+    
+    <!-- Campo Nome -->
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" placeholder="Digite o seu nome ">
+    <p id="saidaNome"></p>
+
+    <!-- Campo Telefone -->
+    <label for="telefone">Telefone Comercial:</label>
+    <span>(</span>
+    <input type="text" id="codigoTelefone1" maxlength="2" style="width: 15px;">
+    <span>)</span>
+    <span> </span>
+    <input type="text" id="parte1Telefone" maxlength="4" style="width: 30px;">
+    <span>-</span>
+    <input type="text" id="parte2Telefone" maxlength="4" style="width: 30px;">
+    <p id="saidaTelefone"></p>
+
+    <!-- Campo Data -->
+    <label for="data">Data:</label>
+    <input type="text" id="data" placeholder="dd/mm">
+    <p id="saidaData"></p>
+
+    <!-- Textarea -->
+    <label for="mensagem"> Mensagem</label>
+    <textarea id="mensagem" rows="4" cols="50" placeholder="mensagem de até 150 caracteres"></textarea>
+
+    <!-- Botão Enviar -->
+    <button id="enviar">Enviar</button>
+
+</body>
+
+</html>
